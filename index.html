@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern e-commerce store featuring the latest electronics and gadgets">
+  <title>NOVAShop - Premium Electronics Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="#" class="logo">NOVA<span>Shop</span></a>
+      </div>
+      <div class="navbar-menu">
+        <a href="#" class="active">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="navbar-actions">
+        <button class="search-btn" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="cart-btn" aria-label="Cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="menu-btn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-slider">
+      <div class="slide active">
+        <div class="slide-content">
+          <h1>Next-Gen Technology</h1>
+          <p>Discover our latest collection of cutting-edge electronics that will transform your digital experience.</p>
+          <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div class="slide-image" style="background-image: url('https://images.pexels.com/photos/577769/pexels-photo-577769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"></div>
+      </div>
+      <!-- Additional slides will be added dynamically -->
+    </div>
+    <div class="slider-controls">
+      <button class="prev" aria-label="Previous slide">‹</button>
+      <button class="next" aria-label="Next slide">›</button>
+      <div class="dots"></div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon-circle">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Latest Technology</h3>
+          <p>Explore cutting-edge products at the forefront of innovation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Premium Quality</h3>
+          <p>Curated selection of high-quality products built to last.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3>Fast Shipping</h3>
+          <p>Express delivery options available on all orders.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Our dedicated support team is always ready to help.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Products</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="audio">Audio</button>
+          <button class="filter-btn" data-filter="phones">Phones</button>
+          <button class="filter-btn" data-filter="laptops">Laptops</button>
+        </div>
+      </div>
+      <div class="product-grid">
+        <!-- Products will be added dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="categories">
+    <div class="container">
+      <h2>Shop by Category</h2>
+      <div class="category-grid">
+        <a href="#" class="category-card" data-category="audio">
+          <div class="category-image" style="background-image: url('https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+            <h3>Audio</h3>
+          </div>
+        </a>
+        <a href="#" class="category-card" data-category="phones">
+          <div class="category-image" style="background-image: url('https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+            <h3>Phones</h3>
+          </div>
+        </a>
+        <a href="#" class="category-card" data-category="laptops">
+          <div class="category-image" style="background-image: url('https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+            <h3>Laptops</h3>
+          </div>
+        </a>
+        <a href="#" class="category-card" data-category="accessories">
+          <div class="category-image" style="background-image: url('https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+            <h3>Accessories</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About NOVAShop</h2>
+          <p>We are passionate about bringing you the latest and most innovative technology products. Our curated selection ensures that you get only the best quality electronics at competitive prices.</p>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number">5000+</span>
+              <span class="stat-label">Products</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50k+</span>
+              <span class="stat-label">Customers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">99%</span>
+              <span class="stat-label">Satisfaction</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Our team at work">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest products and exclusive offers.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="logo">NOVA<span>Shop</span></h3>
+          <p>Your destination for premium electronics and cutting-edge technology.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <i class="icon-facebook"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="icon-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="icon-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="icon-map-pin"></i>
+              <span>Cameroon</span>
+            </li>
+            <li>
+              <i class="icon-phone"></i>
+              <span>+237681849054</span>
+            </li>
+            <li>
+              <i class="icon-mail"></i>
+              <span>cooljimmy974@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 NOVAShop. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be added dynamically -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="total-amount">$0.00</span>
+      </div>
+      <button class="btn btn-primary checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Product Modal -->
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">×</button>
+      <div class="modal-body">
+        <!-- Product details will be added dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="modal" id="searchModal">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">×</button>
+      <div class="modal-body">
+        <form class="search-form">
+          <input type="search" placeholder="Search products..." aria-label="Search">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div class="search-results">
+          <!-- Search results will be added dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay for dimming effect -->
+  <div class="overlay"></div>
+
+  <!-- Loading Indicator -->
+  <div class="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Notification Container -->
+  <div class="notification-container"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
