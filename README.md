@@ -82,14 +82,7 @@ NOVAShop/
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the license terms.
 
----
-
-## Screenshots
-
-![Homepage Screenshot](https://via.placeholder.com/800x400?text=Homepage+Screenshot)
-![Product Modal Screenshot](https://via.placeholder.com/800x400?text=Product+Modal+Screenshot)
-
----
+--
 
 ## Contact
 
