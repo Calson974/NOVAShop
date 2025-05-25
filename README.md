@@ -1,5 +1,4 @@
 # NOVAShop
-Collecting workspace information# NOVAShop - Premium Electronics Store
 
 NOVAShop is a modern e-commerce website designed to showcase and sell premium electronics and gadgets. This project features a responsive design, dynamic product rendering, and interactive user experiences, making it a great starting point for building a professional online store.
 
