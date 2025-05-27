@@ -1,3 +1,14 @@
+// Utility Functions
+function formatPrice(price) {
+  // Convert to number in case it's a string
+  const num = typeof price === 'string' ? parseFloat(price) : price;
+  // Format with thousands separators and 2 decimal places
+  return num.toLocaleString('en-US', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  });
+}
+
 // DOM Elements
 const navbar = document.querySelector('.navbar');
 const cartBtn = document.querySelector('.cart-btn');
@@ -51,6 +62,7 @@ mobileMenu.querySelectorAll('a').forEach(link => {
     }
   });
 });
+
 
 // Cart Toggle
 function toggleCart(force = null) {
@@ -226,11 +238,7 @@ function renderSearchResults(results) {
         <h4>${product.name}</h4>
         <p>${product.category}</p>
         <div class="search-result-price">
-          ${product.salePrice 
-            ? `<span class="sale-price">$${product.salePrice}</span>
-               <span class="original-price">$${product.price}</span>`
-            : `<span>$${product.price}</span>`
-          }
+          <span class="original-price">FCFA ${product.price}</span>
         </div>
       </div>
     </div>
@@ -286,18 +294,16 @@ async function renderProducts(category = 'all') {
       <div class="product-card">
         <div class="product-image">
           <img src="${product.image}" alt="${product.name}" loading="lazy">
-          ${product.salePrice ? `<span class="badge-sale">Sale</span>` : ''}
-          ${product.new ? `<span class="badge-new">New</span>` : ''}
+          <div class="product-badges">
+            ${product.new ? '<span class="badge-new">New</span>' : ''}
+            ${product.featured ? '<span class="badge-featured">Featured</span>' : ''}
+          </div>
         </div>
         <div class="product-details">
           <div class="product-category">${product.category}</div>
           <h3 class="product-title">${product.name}</h3>
           <div class="product-price">
-            ${product.salePrice 
-              ? `<span class="sale-price">$${product.salePrice}</span>
-                 <span class="original-price">$${product.price}</span>`
-              : `<span>$${product.price}</span>`
-            }
+            <span class="original-price">FCFA ${formatPrice(product.price)}</span>
           </div>
           <div class="product-rating">
             ${'★'.repeat(Math.floor(product.rating))}${'☆'.repeat(5-Math.floor(product.rating))}
@@ -346,7 +352,7 @@ function addToCart(productId) {
     cart.push({
       id: product.id,
       name: product.name,
-      price: product.salePrice || product.price,
+      price: product.price,
       image: product.image,
       quantity: 1
     });
@@ -365,7 +371,7 @@ function updateCart() {
       </div>
       <div class="cart-item-details">
         <h4 class="cart-item-title">${item.name}</h4>
-        <div class="cart-item-price">$${item.price}</div>
+        <div class="cart-item-price">FCFA ${formatPrice(item.price)}</div>
         <div class="cart-item-quantity">
           <button class="quantity-btn minus" data-id="${item.id}">-</button>
           <span>${item.quantity}</span>
@@ -381,7 +387,7 @@ function updateCart() {
   cartCount.textContent = totalItems;
   
   const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-  cartTotal.textContent = `$${total.toFixed(2)}`;
+  cartTotal.textContent = `FCFA ${formatPrice(total)}`;
 
   // Add event listeners to quantity buttons
   document.querySelectorAll('.quantity-btn').forEach(btn => {
@@ -436,11 +442,7 @@ function showProductDetails(productId) {
       <div class="product-modal-info">
         <h2>${product.name}</h2>
         <div class="product-modal-price">
-          ${product.salePrice 
-            ? `<span class="sale-price">$${product.salePrice}</span>
-               <span class="original-price">$${product.price}</span>`
-            : `<span>$${product.price}</span>`
-          }
+          <span>FCFA ${formatPrice(product.price)}</span>
         </div>
         <div class="product-modal-rating">
           ${'★'.repeat(Math.floor(product.rating))}${'☆'.repeat(5-Math.floor(product.rating))}

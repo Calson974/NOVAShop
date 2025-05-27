@@ -2,16 +2,15 @@
 const products = [
     {
       id: 1,
-      name: 'Premium Wireless Headphones',
+      name: 'Smartix Immerse ProX Premium ANC Wireless Headphone',
       category: 'audio',
-      price: 299.99,
-      salePrice: 249.99,
+      price: 46429,
       description: 'Experience studio-quality sound with our premium wireless headphones. Featuring active noise cancellation, 30-hour battery life, and premium materials for all-day comfort.',
-      image: 'https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg',
+      image: 'img/Products/Wireless Headset/smartix-immerse-pro-premium-anc-wireless-headphone-628176_700x.webp',
       images: [
-        'https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg',
-        'https://images.pexels.com/photos/3394665/pexels-photo-3394665.jpeg',
-        'https://images.pexels.com/photos/3394666/pexels-photo-3394666.jpeg'
+        'img/Products/Wireless Headset/smartix-immerse-pro-premium-anc-wireless-headphone-628176_700x.webp',
+        'img/Products/Wireless Headset/smartix-immerse-pro-premium-anc-wireless-headphone-628176_700x.webp',
+        'img/Products/Wireless Headset/smartix-immerse-pro-premium-anc-wireless-headphone-701056_700x.webp'
       ],
       featured: true,
       new: true,
@@ -20,16 +19,17 @@ const products = [
     },
     {
       id: 2,
-      name: 'Smart Fitness Watch',
+      name: 'RunmefitGTS 7 Smart Fitness Watch',
       category: 'accessories',
-      price: 199.99,
+      price: 38605,
       salePrice: 179.99,
       description: 'Track your fitness goals with precision using our Smart Fitness Watch. Featuring heart rate monitoring, sleep tracking, and 20+ workout modes.',
-      image: 'https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg',
+      image: 'img/Products/gts7_smart_watch_black.webp',
       images: [
-        'https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg',
-        'https://images.pexels.com/photos/4487477/pexels-photo-4487477.jpeg',
-        'https://images.pexels.com/photos/4397811/pexels-photo-4397811.jpeg'
+        'img/Products/gts7_smart_watch_black.webp',
+        'img/Products/gts7_black_strap_-_view_6.webp',
+        'img/Products/runmefit_gts7_smart_watch.webp',
+        'img/Products/gts7_black_strap_-_view_4.webp'
       ],
       featured: true,
       new: true,
@@ -38,16 +38,18 @@ const products = [
     },
     {
       id: 3,
-      name: 'Ultra HD 4K Smart TV',
+      name: 'TV Smart Hisense - 55 inches- 55A6N- 4K ULTRA HD - black- 6 months warranty',
       category: 'tvs',
-      price: 899.99,
-      salePrice: 799.99,
+      price: 260000,
       description: 'Transform your home entertainment with our Ultra HD 4K Smart TV. Experience stunning clarity and vibrant colors with 4K resolution and HDR technology.',
-      image: 'https://images.pexels.com/photos/6976103/pexels-photo-6976103.jpeg',
+      image: 'img/Products/Hisense Smart Tv/tv_smart_hisense_-_55_pouces_4k_ultra_hd_3_.jpg',
       images: [
-        'https://images.pexels.com/photos/6976103/pexels-photo-6976103.jpeg',
-        'https://images.pexels.com/photos/6976101/pexels-photo-6976101.jpeg',
-        'https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg'
+        'img/Products/Hisense Smart Tv/tv_smart_hisense_-_55_pouces_4k_ultra_hd_3_.jpg',
+        'img/Products/Hisense Smart Tv/tv_smart_hisense_-_55_pouces_4k_ultra_hd_4_.jpg',
+        'img/Products/Hisense Smart Tv/tv_smart_hisense_-_55_pouces_4k_ultra_hd_5_.jpg',
+        'img/Products/Hisense Smart Tv/tv_smart_hisense_-_55_pouces_4k_ultra_hd_1_.jpg',
+        'img/Products/Hisense Smart Tv/tv_smart_hisense_-_55_pouces_4k_ultra_hd_6_.jpg',
+        'img/Products/Hisense Smart Tv/tv_smart_hisense_-_55_pouces_4k_ultra_hd_8_.jpg'
       ],
       featured: true,
       new: false,
@@ -56,15 +58,15 @@ const products = [
     },
     {
       id: 4,
-      name: 'Professional DSLR Camera',
+      name: 'Nikon D850 DSLR Camera - 45.7MP BSI Sensor, 4K UHD Video, 153-Point AF System',
       category: 'cameras',
-      price: 1299.99,
+      price: 1602211,
       description: 'Capture life\'s moments with exceptional clarity using our Professional DSLR Camera. Featuring a 24.2MP sensor, 4K video recording capabilities, and advanced autofocus system.',
-      image: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg',
+      image: 'img/Products/DSLR Camera/Nikon-D850-DSLR-Camera-Body-Only_b26b168a-63ce-4167-8e28-1c4846d360c0.81eb8ad705e57895fd9e00d661582a9f.webp',
       images: [
-        'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg',
-        'https://images.pexels.com/photos/347714/pexels-photo-347714.jpeg',
-        'https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg'
+        'img/Products/DSLR Camera/Nikon-D850-DSLR-Camera-Body-Only_b26b168a-63ce-4167-8e28-1c4846d360c0.81eb8ad705e57895fd9e00d661582a9f.webp',
+        'img/Products/DSLR Camera/45a594cc-932b-4b88-9267-b2d6a3bf2d32.cef8b8f71c8beeaf44d0ba80bb50a2e5.webp',
+        'img/Products/DSLR Camera/34a7c18e-619b-4f41-a6bd-46fb625ccc68.79468a90d8cebd56de27ea0f8cf2de43.webp'
       ],
       featured: false,
       new: false,
@@ -73,16 +75,17 @@ const products = [
     },
     {
       id: 5,
-      name: 'Premium Smartphone',
+      name: 'Apple iPhone 13 Pro, 128GB, Graphite - Unlocked (Renewed)',
       category: 'phones',
-      price: 999.99,
+      price: 198359,
       salePrice: 899.99,
       description: 'Stay connected with our Premium Smartphone featuring cutting-edge technology. The 6.7" OLED display offers stunning visuals, while the triple-camera system captures professional-quality photos.',
-      image: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg',
+      image: 'img/Products/iPhone 13 Pro/51UtM-A3fdL._AC_SL1000_.jpg',
       images: [
-        'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg',
-        'https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg',
-        'https://images.pexels.com/photos/33488/navigation-car-drive-road.jpg'
+        'img/Products/iPhone 13 Pro/51UtM-A3fdL._AC_SL1000_.jpg',
+        'img/Products/iPhone 13 Pro/51kVvsTzVhL._AC_SL1000_.jpg',
+        'img/Products/iPhone 13 Pro/51u+QLrHn-L._AC_SL1000_.jpg',
+        'img/Products/iPhone 13 Pro/418R7s-mnvL._AC_SL1000_.jpg'
       ],
       featured: true,
       new: true,
@@ -91,16 +94,15 @@ const products = [
     },
     {
       id: 6,
-      name: 'Wireless Earbuds',
+      name: 'Hoco - EQ2 true wireless bluetooth headset - bluetooth V5.3 - IPX-5',
       category: 'audio',
-      price: 149.99,
-      salePrice: 129.99,
+      price: 5500,
       description: 'Enjoy immersive sound with our Wireless Earbuds featuring active noise cancellation and crystal-clear audio.',
-      image: 'https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg',
+      image: 'img/Products/Hoco earbuds/_couteurs_hoco_b.jpg',
       images: [
-        'https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg',
-        'https://images.pexels.com/photos/4925201/pexels-photo-4925201.jpeg',
-        'https://images.pexels.com/photos/3394665/pexels-photo-3394665.jpeg'
+        'img/Products/Hoco earbuds/_couteurs_hoco_b.jpg',
+        'img/Products/Hoco earbuds/_couteurs_hoco_g.jpg',
+        'img/Products/Hoco earbuds/_couteurs_hoco_a.jpg'
       ],
       featured: false,
       new: true,
@@ -109,15 +111,17 @@ const products = [
     },
     {
       id: 7,
-      name: 'Gaming Laptop',
+      name: 'ASUS ROG Strix G15 2021 Gaming Laptop, 15.6” 144Hz FHD, NVIDIA RTX 3060, Ryzen 9 5900HX, 16GB DDR4, 512GB SSD, Windows 10, G513QM-ES94',
       category: 'laptops',
-      price: 1599.99,
+      price: 724087,
       description: 'Dominate the gaming world with our high-performance Gaming Laptop. Featuring a 15.6" 144Hz display and the latest-generation processor.',
-      image: 'https://images.pexels.com/photos/7974/pexels-photo.jpg',
+      image: 'img/Products/Asus Rog Strix Gaming laptop/41enLmR6K4L._SS400_.jpg',
       images: [
-        'https://images.pexels.com/photos/7974/pexels-photo.jpg',
-        'https://images.pexels.com/photos/4792731/pexels-photo-4792731.jpeg',
-        'https://images.pexels.com/photos/3977908/pexels-photo-3977908.jpeg'
+        'img/Products/Asus Rog Strix Gaming laptop/41enLmR6K4L._SS400_.jpg',
+        'img/Products/Asus Rog Strix Gaming laptop/41DTxVfWIPL._SS400_.jpg',
+        'img/Products/Asus Rog Strix Gaming laptop/31N2pwzBVCL._SS400_.jpg',
+        'img/Products/Asus Rog Strix Gaming laptop/31LTFODWIyL._SS400_.jpg',
+        'img/Products/Asus Rog Strix Gaming laptop/316utD9XqBL._SS400_.jpg'
       ],
       featured: true,
       new: false,
