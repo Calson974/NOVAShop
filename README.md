@@ -1,5 +1,4 @@
 # NOVAShop
-Collecting workspace information# NOVAShop - Premium Electronics Store
 
 NOVAShop is a modern e-commerce website designed to showcase and sell premium electronics and gadgets. This project features a responsive design, dynamic product rendering, and interactive user experiences, making it a great starting point for building a professional online store.
 
@@ -82,14 +81,7 @@ NOVAShop/
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the license terms.
 
----
-
-## Screenshots
-
-![Homepage Screenshot](https://via.placeholder.com/800x400?text=Homepage+Screenshot)
-![Product Modal Screenshot](https://via.placeholder.com/800x400?text=Product+Modal+Screenshot)
-
----
+--
 
 ## Contact
 
